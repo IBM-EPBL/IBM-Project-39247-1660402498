@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              header: "#28272C",
+              bodyColor: "#C1C5A8",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div
+        class="flex flex-col items-center w-full justify-center bg-header font-semibold h-15"
+      >
+        <div class="">
+          <h1 class="text-white pt-10 text-2xl tracking-wide ml-8">
+            FERTILIZER RECOMMENDATION SYSTEM FOR DISEASE PREDICTION
+          </h1>
+          
+           <h4 class="text-white mt-2 text-center text-2xl tracking-wide ml-8">
+            GET YOUR LEAF DISEASE PREDICTED IN SECONDS!!
+          
+          </h4>
+        </div>
+
+        <ul class="flex justify-end p-4 pr-20 flex-row w-full">
+          <li>
+            <a class="text-white mr-8 hover:text-gray-400 duration-200" href="/"
+              >HOME</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-white hover:text-gray-400 duration-200"
+              href="prediction.html"
+              >PREDICITION</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="h-screen bg-bodyColor">
+      <div
+        class="flex flex-col pt-24 w-full px-12 items-center justify-center space-x-6 md:flex-row"
+      >
+        <div class="w-3/6">
+          <h1 class="text-7xl font-bold text-gray-800">
+            Detect if your plant is infected!!
+          </h1>
+          <p class="text-lg pt-8 text-xl text-justify text-gray-600">
+            Agriculture is one of the major sectors worls wide. Over the years
+            it has developed and the use of new technologies and equipment
+            replaced almost all the traditional methods of farming. The plant
+            diseases effect the production. Identification of diseases and
+            taking necessary precautions is all done through naked eye, which
+            requires labour and laboratries. This application helps farmers in
+            detecting the diseases by observing the spots on the leaves, which
+            inturn saves effort and labor costs.
+          </p>
+        </div>
+        <div class="w-3/6">
+          <img
+            class="rounded-lg"
+            src="/static/images/homeImage.jpg"
+            alt="Plant"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
